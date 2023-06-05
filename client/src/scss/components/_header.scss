@@ -1,0 +1,159 @@
+@import '../variables/color-variables';
+
+.header {
+    position: relative;
+    background-color: $accent;
+    padding: 20px 0 16px 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+
+    .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-bottom: 36px;
+
+        &__nav {
+            flex: 1 1 auto;
+        }
+
+        &__logo,
+        .contact-info {
+            margin-right: 30px;
+        }
+
+        &__nav-list {
+            display: flex;
+            color: white;
+            gap: 20px;
+        }
+
+        a {
+            color: white;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .contact-info,
+        .contact-info {
+            display: flex;
+            gap: 30px;
+
+            a {
+                margin-right: 20px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .phone-number {
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 19px;
+            color: white;
+        }
+
+        .language-toggle {
+            border: unset;
+            background: unset;
+            color: white;
+            font-size: 14px;
+            line-height: 16px;
+            cursor: pointer;
+           
+            span:first-of-type {
+                 margin-right: 18px;
+
+                &::after {
+                    content: '|';
+                    padding: 0 5px;
+                    position: absolute;    
+                 }
+            }
+
+            span {
+                font-weight: 300;
+                text-decoration: underline;
+            }
+
+            span.active {
+                font-weight: 700;
+                text-decoration: unset;
+            }
+        }
+
+        .login-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: underline;
+        }
+    
+    }
+
+    .sub-header {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10px;
+        gap: 30px;
+
+        .search-bar {
+            flex: 1 1 auto;
+            padding-left: 264px;
+        }
+
+        .actions {
+            display: flex;
+
+            a {
+                margin-right: 30px;
+                color: white;
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .counter.cart {
+        background-color: $discount;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.sidebar {
+    max-width: calc(234px - 60px);
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    padding: 30px;
+    background: $white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        gap: 12px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 17px;
+    }
+}

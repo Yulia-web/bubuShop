@@ -1,0 +1,74 @@
+@import '../variables/color-variables';
+@import '../variables/fonts-variables';
+
+*, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $white;
+    font-size: $desctop-size;
+    font-weight: $font-weight-normal;
+    font-family: $fonts-comforta;
+}
+
+a {
+    text-decoration: unset;
+    color: $black;
+}
+
+li::marker {
+    font-size: 0;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+h2.title {
+    font-family: $fonts-comforta;
+    font-weight: $font-weight-ultra-bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $black;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.green {
+    background: linear-gradient(208.16deg, #6AD245 0%, #58BE34 100%);
+}
+
+.yellow {
+    background: #F99C11;
+}
+
+.aqua {
+    background: linear-gradient(248.14deg, #2DEAE4 0%, #27D8D2 100%);
+}
+
+.blue {
+    background: linear-gradient(208.16deg, #4F8AE2 0%, #3A73C9 100%);
+}
+
+.red {
+    background: linear-gradient(247.06deg, #D84545 -1.64%, #CC3C3C 100%);
+}
+
+.purple {
+    background: linear-gradient(248.14deg, #A24FE2 0%, #8E3AD0 100%);
+}
+
+.black,
+.black span {
+  color: black !important;
+  font-weight: 700 !important;
+}

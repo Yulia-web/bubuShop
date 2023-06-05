@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+// base styles
+@import 'base/base';
+@import 'base/brackpoints';
+@import 'base/forms-elements';
+@import 'base/tables-elements';
+@import 'base/menus';
+@import 'base/gap';
+
+// variables
+@import 'variables/breackpoints-variables';
+@import 'variables/color-variables';
+@import 'variables/fonts-variables';
+
+// styles for components
+@import 'components/header';
+@import 'components/footer';
+
+//blocks
+@import 'blocks/sliders';
+@import 'blocks/discount';
+@import 'blocks/categories';
+@import 'blocks/brands';
+
+//page
+@import 'page/login-page';
+@import 'page/cart-page';

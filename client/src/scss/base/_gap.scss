@@ -1,0 +1,12 @@
+$gap30: 30px;
+$gap80: 80px;
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    &:last-of-type {
+        margin-bottom: 87px;
+    }
+}

@@ -1,0 +1,106 @@
+@import '../mixins/buttons';
+
+.block-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .sale {
+        padding: 5px;
+        background: #FFF0D2;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: #F99C11;
+        font-weight: 700;
+        line-height: 17px;
+    }
+}
+
+.discounts-items,
+.reviewed-items {
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.product-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  max-width: 234px;
+
+  &:hover .action {    
+      position: static;
+      clip: unset;
+  }
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  padding: 7px;
+  background: #F99C11;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  .discount-price {
+      color: #202020;
+      font-weight: 300;
+      font-size: 14px;
+      text-decoration: line-through;
+
+      span {
+          margin-right: 3px;
+          font-weight: 700;
+      }
+  }
+
+  .standart-price {
+      color: #F99C11;
+      font-size: 17px;
+      font-weight: 300;
+
+      span{
+          margin-right: 3px;
+          font-weight: 700;
+      }
+  }
+}
+
+.not-available {
+  font-weight: 400;
+  color: #F91111;
+}
+
+.buy {
+  @include PinkButton;
+}
+
+.action {  
+  display: flex;
+  position: absolute;      
+  align-items: center;
+  gap: 15px;
+  clip:rect(0,0,0,0);
+  transition: all 0.7s ease-in-out;
+
+  & img {
+      width: 25px;
+      height: 19px;
+      filter: invert(33%) sepia(72%) saturate(1273%) hue-rotate(308deg) brightness(84%) contrast(97%);
+ 
+      &:hover {
+          filter: invert(25%) sepia(23%) saturate(4885%) hue-rotate(314deg) brightness(90%) contrast(93%); 
+      }    
+  }
+}

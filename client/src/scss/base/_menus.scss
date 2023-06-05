@@ -1,0 +1,52 @@
+@import '../variables/color-variables';
+
+.sidebar-header {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 30px;
+
+    &::after {
+        content: '';
+        border: 1px solid #E1E1E1;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.sidebar_burger {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 16px;
+
+    & span {
+      top: 7px;
+    }
+
+    &::before,
+    &::after,
+    & span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        background-color: $accent;
+        transition: all 0.3s ease-in-out;
+     }
+
+    &::before,
+    &::after {
+        content: '';
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+}

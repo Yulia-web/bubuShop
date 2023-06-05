@@ -1,0 +1,50 @@
+@import '../variables/color-variables';
+@import '../variables/fonts-variables';
+
+.sub-header input[type="search"],
+.sub-header input[type="text"] {
+    position: relative;
+    margin-right: 30px;
+    width: 100%;
+    height: 47px;
+    font-family: $fonts-comforta;
+    font-weight: $font-weight-normal;
+    font-size: $desctop-size;
+    line-height: 17px;
+    color: $white;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid $white;
+    border-radius: 10px;
+
+    &::placeholder  {
+        color: white;
+    }
+}
+
+.search-bar {
+    position: relative;
+     
+    &::before {
+        content: '';
+        background-image: url('../images/icons/search.svg');
+        width: 15px;
+        height: 15.5px;
+        right: 15px;
+        bottom: 15.7px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        cursor: pointer;
+    }
+}
+
+form {
+    input {
+        border: 1px solid #C7C7C7;
+        border-radius: 5px;
+        padding: 20px;
+        color: #585858;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,24 @@
+.brands-blok-gallary {
+    margin-bottom: $gap80;
+}
+
+.brands-blok-description {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .description {
+        background: linear-gradient(180deg, #000000 50%, rgba(0, 0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 15px;
+    }
+
+    .look-more {
+        @include RedLink();
+        display: block;
+        margin: 0 auto;
+    }
+}
